@@ -1,0 +1,13 @@
+{
+  "servers": [
+    "https://example.com",
+    "https://another-api.com"
+  ],
+  "alert_email": "you@example.com",
+  "smtp": {
+    "server": "smtp.example.com",
+    "port": 587,
+    "user": "your_email@example.com",
+    "password": "your_email_password"
+  }
+}
