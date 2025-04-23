@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                echo 'build my app'
-                nodejs('24'){
+                nodejs('node-23'){
                sh 'yarn install'
                 }
             }
