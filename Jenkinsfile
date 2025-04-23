@@ -5,13 +5,18 @@ pipeline {
         stage('build') {
             steps {
                echo 'build my app'
+                nodejs('24'){
+               sh 'yarn install'
+                }
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                echo ' yes'
+                withgradle(){
+                sh './gradlew -v'
+                }
                
             }
         }
