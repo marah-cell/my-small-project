@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('build') {
+        stage('run frontend') {
             steps {
                echo 'build my app'
                 nodejs('node-23'){
@@ -11,7 +11,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('run backend') {
             steps {
                 echo 'Running tests...'
                 withgradle(){
