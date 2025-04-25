@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('run frontend') {
             steps {
-               echo 'build my app'
+               echo 'build my forntend'
                 nodejs('node-23'){
                sh 'yarn install'
                 }
